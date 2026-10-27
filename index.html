@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+<body>
+
+    <header>
+        <h1>Task Manager</h1>
+        <p>Aplikasi sederhana untuk mengelola tugas harian.</p>
+    </header>
+
+    <nav aria-label="Navigasi utama">
+        <a href="#ringkasan">Ringkasan</a>
+        <a href="#daftar-tugas">Daftar Tugas</a>
+        <a href="#tambah-tugas">Tambah Tugas</a>
+    </nav>
+
+    <main>
+        <section id="ringkasan">
+            <h2>Ringkasan Tugas</h2>
+            <article>
+                <h3>Anda memiliki 5 tugas yang perlu dikerjakan.</h3>
+                <p>3 tugas sudah selesai.</p>
+            </article>
+            <article>
+                <h3>Anda memiliki 5 tugas yang perlu dikerjakan.</h3>
+                <p>3 tugas sudah selesai.</p>
+            </article>
+            <article>
+                <h3>Anda memiliki 5 tugas yang perlu dikerjakan.</h3>
+                <p>3 tugas sudah selesai.</p>
+            </article>
+        </section>
+
+        <section id="daftar-tugas">
+            <h2>Daftar Tugas</h2>
+            <table border="1" width="100%" height="100%">
+                <caption>Daftar tugas harian</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Nama Tugas</th>
+                        <th scope="col">Prioritas</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Aksi</th>   
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Membuat HMTL</td>
+                        <td>Tinggi</td>
+                        <td>Belum selesai</td>
+                        <td><button>Edit</button> <button>Hapus</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Menulis dokumentasi</td>
+                        <td>Sedang</td>
+                        <td>Belum selesai</td>
+                        <td><button>Edit</button> <button>Hapus</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Menjadi hecker</td>
+                        <td>Rendah</td>
+                        <td>Selesai</td>
+                        <td><button>Edit</button> <button>Hapus</button></td>
+                    </tr>
+                </tbody>
+            </table>   
+        </section>
+
+        <section id="tambah-tugas">
+            <h2>Tambah Tugas</h2>
+            <form>
+                <p>
+                    <label for="nama-tugas">Nama Tugas:</label>
+                    <input type="text" id="nama-tugas" name="nama-tugas">
+                </p>
+
+                <p>
+                    <label for="Prioritas">Prioritas</label>
+                    <select id="Prioritas" name="Prioritas">
+                        <option value="tinggi">Tinggi</option>
+                        <option value="sedang">Sedang</option>
+                        <option value="rendah">Rendah</option>
+                    </select>
+                </p>
+            </form>
+            <button type="submit">Tambah tugas</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bnsp Cikiwir</p>
+    </footer>
+
+</body>
+</html>
